@@ -1,0 +1,96 @@
+// ---------------------------------Variables-------------------------------------//
+//________________________________________________________________________________//
+
+// colors
+$light-color: #eee;
+$dark-color: #222;
+$primary-color: #5c5c5c;
+$secondary-color: #656565;
+$overlay-color: rgba(0, 0, 0, .5);
+
+$primary-gradient: linear-gradient(45deg, $primary-color, $secondary-color);
+
+// margin-padding
+$margin-layout-as: 5px;
+$margin-layout-xs: 10px;
+$margin-layout-s: 20px;
+$margin-layout-m: 30px;
+$margin-layout-l: 40px;
+$margin-layout-xl: 60px;
+$margin-layout-zl: 80px;
+
+
+// other
+$default-rounding: 5px;
+
+
+
+
+// Base styles
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-size: 2.8rem;
+}
+h2 {
+	font-size: 2.4rem;
+}
+h3 {
+	font-size: 1.8rem;
+}
+h4, h5, h6, a, p, li {
+	font-size: 1.6rem;
+}
+p {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: $light-color;
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+
+// Mixins styles
+
+@mixin default-animation {
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}

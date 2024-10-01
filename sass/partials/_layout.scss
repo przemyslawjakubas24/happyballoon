@@ -1,0 +1,134 @@
+// Layout styles //
+@use './core' as *;
+
+// General styles
+.container {
+	margin: 0 auto;
+	padding: 0 $margin-layout-s;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.header {
+	background-color: $primary-color;
+	padding: $margin-layout-s;
+	text-align: center;
+	margin-bottom: $margin-layout-zl;
+}
+
+.top-content {
+	background-image: url('./../img/page/git.png');
+	background-size: cover;
+	// background-repeat: no-repeat;
+	background-position-y: 80px;
+	color: $light-color;
+	.container {
+		padding: 80px $margin-layout-s 180px;
+	}
+	h2 {
+		margin-bottom: $margin-layout-s;
+	}
+	margin-bottom: $margin-layout-zl;
+}
+
+.content {
+	.container {
+		.content_item {
+			padding: $margin-layout-zl $margin-layout-s;
+			background-color: rgb(140, 140, 140);
+			h3 {
+				margin-bottom: $margin-layout-xs;
+			}
+			margin-bottom: $margin-layout-l;
+		}
+	}
+}
+
+.footer {
+	padding-top: $margin-layout-l;
+	background-color: $dark-color;
+	&_top {
+		.container {
+			.footer_top__box {
+				margin-bottom: $margin-layout-l;
+				padding: $margin-layout-s;
+				background-color: rgb(140, 140, 140);
+				h4 {
+					margin-bottom: $margin-layout-s;
+				}
+				a {
+					display: block;
+					margin-bottom: $margin-layout-xs;
+				}
+			}
+		}
+	}
+	
+	&_bottom {
+		background-color: rgb(140, 140, 140);
+		.container {
+			padding: $margin-layout-s;
+		}
+	}
+}
+
+// -------------------------------------------------------------------------
+// Responsive     ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+// -------------------------------------------------------------------------
+
+@media (min-width: 759px) {
+	.top-content {
+		background-image: url('./../img/page/git1080.png');
+		background-position-y: 40px;
+		.container {
+			padding: 80px $margin-layout-l 180px;
+			p {
+				width: 50%;
+			}
+		}
+	}
+	.content {
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 0 $margin-layout-l;
+			.content_item {
+				width: 48%;
+			}
+		}
+	}
+	.footer_top {
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 0 $margin-layout-l;
+			.footer_top__box {
+				width: 48%;
+			}
+		}
+	}
+	.footer_bottom {
+		.container {
+			padding: $margin-layout-s $margin-layout-l;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.top-content {
+		background-position-y: -300px;
+		background-position-x: 280px;
+		.container {
+			padding: 180px $margin-layout-l 180px;
+		}
+	}
+	.content {
+		.container {
+			.content_item {
+				width: 30%;
+			}
+		}
+	}
+}
