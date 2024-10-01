@@ -9,24 +9,43 @@
 	max-width: 1200px;
 }
 
+//Header styles
 .header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: $primary-color;
 	padding: $margin-layout-s;
 	text-align: center;
 	margin-bottom: $margin-layout-zl;
+	color: $dark-color;
+	img {
+		display: block;
+		width: 160px;
+		border-radius: 80px;
+		border: 8px solid $primary-color;
+	}
 }
 
 .top-content {
-	background-image: url('./../img/page/git.png');
+	background-image: url('./../img/page/top_bg_1920.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
-	// background-repeat: no-repeat;
-	background-position-y: 80px;
-	color: $light-color;
+	background-position: center;
+	color: $dark-color;
 	.container {
-		padding: 80px $margin-layout-s 180px;
+		padding: $margin-layout-zl $margin-layout-s;
+		background-color: rgb(240,240,240, 0.2);
+		p {
+			margin: 0 auto;
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 700;
+		}
 	}
 	h2 {
 		margin-bottom: $margin-layout-s;
+		text-align: center;
 	}
 	margin-bottom: $margin-layout-zl;
 }
@@ -63,7 +82,7 @@
 			}
 		}
 	}
-	
+
 	&_bottom {
 		background-color: rgb(140, 140, 140);
 		.container {
@@ -78,12 +97,10 @@
 
 @media (min-width: 759px) {
 	.top-content {
-		background-image: url('./../img/page/git1080.png');
-		background-position-y: 40px;
 		.container {
-			padding: 80px $margin-layout-l 180px;
+			// padding: 80px $margin-layout-l 180px;
 			p {
-				width: 50%;
+				width: 80%;
 			}
 		}
 	}
@@ -118,10 +135,9 @@
 
 @media (min-width: 992px) {
 	.top-content {
-		background-position-y: -300px;
-		background-position-x: 280px;
+		padding: $margin-layout-zl $margin-layout-l;
 		.container {
-			padding: 180px $margin-layout-l 180px;
+			background-color: rgb(240,240,240, 0.5);
 		}
 	}
 	.content {
