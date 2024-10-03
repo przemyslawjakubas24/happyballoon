@@ -1,7 +1,7 @@
 // ---------------------------------Variables-------------------------------------//
 //________________________________________________________________________________//
 
-// colors
+// Colors
 $light-color: #eee;
 $dark-color: #222;
 $primary-color: #0cc6ef;
@@ -11,17 +11,25 @@ $overlay-color: rgba(0, 0, 0, .5);
 
 $primary-gradient: linear-gradient(45deg, $primary-color, $secondary-color);
 
-// margin-padding
-$margin-layout-as: 5px;
-$margin-layout-xs: 10px;
-$margin-layout-s: 20px;
-$margin-layout-m: 30px;
-$margin-layout-l: 40px;
-$margin-layout-xl: 60px;
-$margin-layout-zl: 80px;
+// Size main
+
+$size-1: 5px;
+$size-2: 10px;
+$size-3: 20px;
+$size-4: 30px;
+$size-5: 40px;
+$size-6: 60px;
+$size-7: 80px;
+
+// Margin page
+
+$margin-page-small: $size-3;
+$margin-page-medium: $size-5;
+$margin-page-large: $size-7;
 
 
-// other
+
+// Other
 $default-rounding: 5px;
 
 

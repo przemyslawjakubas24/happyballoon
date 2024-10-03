@@ -4,7 +4,7 @@
 // General styles
 .container {
 	margin: 0 auto;
-	padding: 0 $margin-layout-s;
+	padding: 0 $margin-page-small;
 	width: 100%;
 	max-width: 1200px;
 }
@@ -15,9 +15,9 @@
 	flex-direction: column;
 	align-items: center;
 	background-color: $primary-color;
-	padding: $margin-layout-s;
+	padding: $margin-page-small;
 	text-align: center;
-	margin-bottom: $margin-layout-zl;
+	margin-bottom: $size-7;
 	color: $dark-color;
 	img {
 		display: block;
@@ -28,56 +28,61 @@
 }
 
 .top-content {
+	padding-top: $size-7;
+	padding-bottom: $size-7;
 	background-image: url('./../img/page/top_bg_1920.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	color: $dark-color;
 	.container {
-		padding: $margin-layout-zl $margin-layout-s;
-		background-color: rgb(240,240,240, 0.2);
-		p {
-			margin: 0 auto;
-			text-align: center;
-			font-size: 2rem;
-			font-weight: 700;
+		&_inner {
+			padding-top: $size-7;
+			padding-bottom: $size-7;
+			background-color: rgb(240, 240, 240, 0.5);
+			p {
+				margin: 0 auto;
+				text-align: center;
+				font-size: 2rem;
+				font-weight: 700;
+			}
 		}
 	}
 	h2 {
-		margin-bottom: $margin-layout-s;
+		margin-bottom: $size-3;
 		text-align: center;
 	}
-	margin-bottom: $margin-layout-zl;
+	margin-bottom: $size-7;
 }
 
 .content {
 	.container {
 		.content_item {
-			padding: $margin-layout-zl $margin-layout-s;
+			padding: $size-7 $size-3;
 			background-color: rgb(140, 140, 140);
 			h3 {
-				margin-bottom: $margin-layout-xs;
+				margin-bottom: $size-2;
 			}
-			margin-bottom: $margin-layout-l;
+			margin-bottom: $size-5;
 		}
 	}
 }
 
 .footer {
-	padding-top: $margin-layout-l;
+	padding-top: $size-5;
 	background-color: $dark-color;
 	&_top {
 		.container {
 			.footer_top__box {
-				margin-bottom: $margin-layout-l;
-				padding: $margin-layout-s;
+				margin-bottom: $size-5;
+				padding: $size-3;
 				background-color: rgb(140, 140, 140);
 				h4 {
-					margin-bottom: $margin-layout-s;
+					margin-bottom: $size-3;
 				}
 				a {
 					display: block;
-					margin-bottom: $margin-layout-xs;
+					margin-bottom: $size-2;
 				}
 			}
 		}
@@ -85,9 +90,6 @@
 
 	&_bottom {
 		background-color: rgb(140, 140, 140);
-		.container {
-			padding: $margin-layout-s;
-		}
 	}
 }
 
@@ -98,7 +100,6 @@
 @media (min-width: 759px) {
 	.top-content {
 		.container {
-			// padding: 80px $margin-layout-l 180px;
 			p {
 				width: 80%;
 			}
@@ -109,7 +110,6 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
-			padding: 0 $margin-layout-l;
 			.content_item {
 				width: 48%;
 			}
@@ -120,31 +120,49 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
-			padding: 0 $margin-layout-l;
 			.footer_top__box {
 				width: 48%;
 			}
 		}
 	}
-	.footer_bottom {
-		.container {
-			padding: $margin-layout-s $margin-layout-l;
-		}
-	}
 }
 
 @media (min-width: 992px) {
+	.header {
+		// padding-left: 0;
+		// padding-right: 0;
+	}
 	.top-content {
-		padding: $margin-layout-zl $margin-layout-l;
 		.container {
-			background-color: rgb(240,240,240, 0.5);
+			// padding-left: 0;
+			// padding-right: 0;
+			// background-color: rgb(240, 240, 240, 0.7);
+			p {
+				width: 65%;
+			}
 		}
 	}
 	.content {
 		.container {
+			// padding-left: 0;
+			// padding-right: 0;
 			.content_item {
 				width: 30%;
 			}
+		}
+	}
+	.footer_top {
+		.container {
+			// padding-left: 0;
+			// padding-right: 0;
+		}
+	}
+	.footer_bottom {
+		.container {
+			// padding-left: 0;
+			// padding-right: 0;
+			padding-top: $size-3;
+			padding-bottom: $size-3;
 		}
 	}
 }

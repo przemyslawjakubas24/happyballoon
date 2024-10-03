@@ -87,6 +87,8 @@ button {
 }
 
 .top-content {
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-image: url("./../img/page/top_bg_1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,11 +96,12 @@ button {
   color: #222;
   margin-bottom: 80px;
 }
-.top-content .container {
-  padding: 80px 20px;
-  background-color: rgba(240, 240, 240, 0.2);
+.top-content .container_inner {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: rgba(240, 240, 240, 0.5);
 }
-.top-content .container p {
+.top-content .container_inner p {
   margin: 0 auto;
   text-align: center;
   font-size: 2rem;
@@ -137,9 +140,6 @@ button {
 .footer_bottom {
   background-color: rgb(140, 140, 140);
 }
-.footer_bottom .container {
-  padding: 20px;
-}
 
 @media (min-width: 759px) {
   .top-content .container p {
@@ -149,7 +149,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 40px;
   }
   .content .container .content_item {
     width: 48%;
@@ -158,23 +157,20 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 40px;
   }
   .footer_top .container .footer_top__box {
     width: 48%;
   }
-  .footer_bottom .container {
-    padding: 20px 40px;
-  }
 }
 @media (min-width: 992px) {
-  .top-content {
-    padding: 80px 40px;
-  }
-  .top-content .container {
-    background-color: rgba(240, 240, 240, 0.5);
+  .top-content .container p {
+    width: 65%;
   }
   .content .container .content_item {
     width: 30%;
+  }
+  .footer_bottom .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
