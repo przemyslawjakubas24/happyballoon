@@ -36,16 +36,14 @@
 	background-position: center;
 	color: $dark-color;
 	.container {
-		&_inner {
-			padding-top: $size-7;
-			padding-bottom: $size-7;
-			background-color: rgb(240, 240, 240, 0.5);
-			p {
-				margin: 0 auto;
-				text-align: center;
-				font-size: 2rem;
-				font-weight: 700;
-			}
+		padding-top: $size-7;
+		padding-bottom: $size-7;
+		background-color: rgb(240, 240, 240, 0.5);
+		p {
+			margin: 0 auto;
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 700;
 		}
 	}
 	h2 {
@@ -90,6 +88,10 @@
 
 	&_bottom {
 		background-color: rgb(140, 140, 140);
+		.container {
+			padding-top: $size-3;
+			padding-bottom: $size-3;
+		}
 	}
 }
 
@@ -101,7 +103,7 @@
 	.top-content {
 		.container {
 			p {
-				width: 80%;
+				max-width: 800px;
 			}
 		}
 	}
@@ -128,41 +130,16 @@
 }
 
 @media (min-width: 992px) {
-	.header {
-		// padding-left: 0;
-		// padding-right: 0;
-	}
 	.top-content {
 		.container {
-			// padding-left: 0;
-			// padding-right: 0;
-			// background-color: rgb(240, 240, 240, 0.7);
-			p {
-				width: 65%;
-			}
+			max-width: 1160px;
 		}
 	}
 	.content {
 		.container {
-			// padding-left: 0;
-			// padding-right: 0;
 			.content_item {
 				width: 30%;
 			}
-		}
-	}
-	.footer_top {
-		.container {
-			// padding-left: 0;
-			// padding-right: 0;
-		}
-	}
-	.footer_bottom {
-		.container {
-			// padding-left: 0;
-			// padding-right: 0;
-			padding-top: $size-3;
-			padding-bottom: $size-3;
 		}
 	}
 }
