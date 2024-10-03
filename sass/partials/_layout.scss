@@ -14,16 +14,16 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: $primary-color;
 	padding: $margin-page-small;
 	text-align: center;
-	margin-bottom: $size-7;
+	margin-bottom: $size-5;
+	// border-bottom: 4px solid $primary-color;
 	color: $dark-color;
 	img {
 		display: block;
-		width: 160px;
-		border-radius: 80px;
-		border: 8px solid $primary-color;
+		width: 280px;
+		// border-radius: 80px;
+		// border: 8px solid $primary-color;
 	}
 }
 
