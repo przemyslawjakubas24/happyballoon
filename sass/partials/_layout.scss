@@ -17,13 +17,10 @@
 	padding: $margin-page-small;
 	text-align: center;
 	margin-bottom: $size-5;
-	// border-bottom: 4px solid $primary-color;
 	color: $dark-color;
 	img {
 		display: block;
 		width: 280px;
-		// border-radius: 80px;
-		// border: 8px solid $primary-color;
 	}
 }
 
@@ -36,19 +33,22 @@
 	background-position: center;
 	color: $dark-color;
 	.container {
-		padding-top: $size-7;
-		padding-bottom: $size-7;
+		padding: $size-5;
 		background-color: rgb(240, 240, 240, 0.5);
+		h2,
 		p {
-			margin: 0 auto;
 			text-align: center;
+		}
+		h2 {
+			margin-bottom: $size-3;
+		}
+		p {
 			font-size: 2rem;
 			font-weight: 700;
 		}
-	}
-	h2 {
-		margin-bottom: $size-3;
-		text-align: center;
+		p:first-of-type {
+			margin-bottom: $size-2;
+		}
 	}
 	margin-bottom: $size-7;
 }
@@ -100,13 +100,6 @@
 // -------------------------------------------------------------------------
 
 @media (min-width: 759px) {
-	.top-content {
-		.container {
-			p {
-				max-width: 800px;
-			}
-		}
-	}
 	.content {
 		.container {
 			display: flex;
@@ -132,7 +125,7 @@
 @media (min-width: 992px) {
 	.top-content {
 		.container {
-			max-width: 1160px;
+			max-width: 900px;
 		}
 	}
 	.content {

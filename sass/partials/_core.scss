@@ -7,7 +7,7 @@ $dark-color: #222;
 $primary-color: #0cc6ef;
 $primary-color: #0ca9ee;
 $secondary-color: #656565;
-$overlay-color: rgba(0, 0, 0, .5);
+$overlay-color: rgba(0, 0, 0, 0.5);
 
 $primary-gradient: linear-gradient(45deg, $primary-color, $secondary-color);
 
@@ -27,13 +27,8 @@ $margin-page-small: $size-3;
 $margin-page-medium: $size-5;
 $margin-page-large: $size-7;
 
-
-
 // Other
 $default-rounding: 5px;
-
-
-
 
 // Base styles
 
@@ -63,20 +58,30 @@ h4,
 h5,
 h6 {
 	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
 }
 
 h1 {
 	font-size: 2.8rem;
 }
+
 h2 {
 	font-size: 2.4rem;
 }
+
 h3 {
 	font-size: 1.8rem;
 }
-h4, h5, h6, a, p, li {
+
+h4,
+h5,
+h6,
+a,
+p,
+li {
 	font-size: 1.6rem;
 }
+
 p {
 	line-height: 1.5;
 }
@@ -98,8 +103,7 @@ button {
 }
 
 // Mixins styles
-
 @mixin default-animation {
-    transition-duration: .2s;
-    transition-timing-function: ease-in-out;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
 }
