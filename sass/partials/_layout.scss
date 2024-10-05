@@ -38,30 +38,56 @@
 		h2,
 		p {
 			text-align: center;
-		}
-		h2 {
 			margin-bottom: $size-3;
 		}
 		p {
 			font-size: 2rem;
 			font-weight: 700;
 		}
-		p:first-of-type {
-			margin-bottom: $size-2;
+		p:last-of-type {
+			margin-bottom: 0;
 		}
 	}
 	margin-bottom: $size-7;
 }
 
+//Content styles
 .content {
 	.container {
 		.content_item {
-			padding: $size-7 $size-3;
+			padding: 100px $size-3;
 			background-color: rgb(140, 140, 140);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
 			h3 {
-				margin-bottom: $size-2;
+				display: block;
+				max-width: 140px;
+				margin: 0 auto;
+				padding: $size-2;
+				background-color: rgba(255, 255, 255, 0.75);
+				text-align: center;
+				line-height: 1.25;
 			}
 			margin-bottom: $size-5;
+		}
+		.content_item-1 {
+			background-image: url('../../img/gallery/scianka2.jpeg');
+		}
+		.content_item-2 {
+			background-image: url('../../img/gallery/brama.jpg');
+		}
+		.content_item-3 {
+			background-image: url('../../img/gallery/girlanda.jpeg');
+		}
+		.content_item-4 {
+			background-image: url('../../img/gallery/slupki.jpeg');
+		}
+		.content_item-5 {
+			background-image: url('../../img/gallery/sala.jpeg');
+		}
+		.content_item-6 {
+			background-image: url('../../img/gallery/baby.jpg');
 		}
 	}
 }

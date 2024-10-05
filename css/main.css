@@ -106,25 +106,50 @@ button {
 .top-content .container h2,
 .top-content .container p {
   text-align: center;
-}
-.top-content .container h2 {
   margin-bottom: 20px;
 }
 .top-content .container p {
   font-size: 2rem;
   font-weight: 700;
 }
-.top-content .container p:first-of-type {
-  margin-bottom: 10px;
+.top-content .container p:last-of-type {
+  margin-bottom: 0;
 }
 
 .content .container .content_item {
-  padding: 80px 20px;
+  padding: 100px 20px;
   background-color: rgb(140, 140, 140);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 40px;
 }
 .content .container .content_item h3 {
-  margin-bottom: 10px;
+  display: block;
+  max-width: 140px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  line-height: 1.25;
+}
+.content .container .content_item-1 {
+  background-image: url("../../img/gallery/scianka2.jpeg");
+}
+.content .container .content_item-2 {
+  background-image: url("../../img/gallery/brama.jpg");
+}
+.content .container .content_item-3 {
+  background-image: url("../../img/gallery/girlanda.jpeg");
+}
+.content .container .content_item-4 {
+  background-image: url("../../img/gallery/slupki.jpeg");
+}
+.content .container .content_item-5 {
+  background-image: url("../../img/gallery/sala.jpeg");
+}
+.content .container .content_item-6 {
+  background-image: url("../../img/gallery/baby.jpg");
 }
 
 .footer {
