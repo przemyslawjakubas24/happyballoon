@@ -102,10 +102,15 @@
                 </div>
                 <div class="footer_top__box">
                     <h4>Formularz kontaktowy</h4>
-                    <a href="">Consectetur adipisicing elit</a>
-                    <a href="">Consectetur adipisicing elit</a>
-                    <a href="">Consectetur adipisicing elit</a>
-                    <a href="">Consectetur adipisicing elit</a>
+                    <div class="contact__wrap-inner">
+                        <form action="mail.php" method="post" class="contact__item contact__form">
+                            <input type="text" id="name" name="name" placeholder="Imię" required>
+                            <input type="email" id="mail" name="email" placeholder="Email" required>
+                            <textarea name="msg" id="msg" placeholder="Wiadomość" required></textarea>
+                            <button type="submit" class="btn">Wyślij Wiadomość</button>
+                        </form>
+                        <p class="msg-status">Status wiadomości</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -154,6 +154,13 @@
 					display: block;
 					margin-bottom: $size-2;
 				}
+				&:last-child {
+					background-color: transparent;
+					padding: 0;
+					h4 {
+						color: $light-color;
+					}
+				}
 			}
 		}
 	}

@@ -12,3 +12,51 @@
     border-radius: $default-rounding;
 }
 
+// Form styles
+.msg-status {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 190px;
+	left: 0;
+	padding: 10px;
+	font-size: 16px;
+	width: 100%;
+	// box-shadow: $shadow-main;
+}
+
+.success {
+	display: flex;
+	background-color: #39b939;
+	color: $light-color;
+}
+
+.error {
+	display: flex;
+	background-color: #ee7b2e;
+	color: $light-color;
+}
+
+.contact__form {
+    .btn {
+        cursor: pointer;
+        padding: $size-3;
+    }
+}
+
+.contact__form * {
+    display: block;
+    width: 100%;
+    margin-bottom: $size-4;
+    padding: $size-3;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    // border: 1px solid $dark-gray;
+}
+
+.contact__form textarea {
+    // color: $dark-color;
+    height: 10rem;
+}
