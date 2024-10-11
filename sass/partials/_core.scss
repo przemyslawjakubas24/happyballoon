@@ -4,9 +4,8 @@
 // Colors
 $light-color: #eee;
 $dark-color: #222;
-$primary-color: #0cc6ef;
 $primary-color: #0ca9ee;
-$secondary-color: #656565;
+$secondary-color: #b20472;
 $overlay-color: rgba(0, 0, 0, 0.5);
 
 $primary-gradient: linear-gradient(45deg, $primary-color, $secondary-color);
@@ -80,6 +79,7 @@ a,
 p,
 li {
 	font-size: 1.6rem;
+	letter-spacing: 1px;
 }
 
 p {
@@ -100,6 +100,8 @@ button {
 	background: none;
 	border: 0;
 	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
 }
 
 // Mixins styles
