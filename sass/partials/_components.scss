@@ -1,5 +1,55 @@
-// Components styles
+////------------------------------- Components styles-------------------------------//////
 @use './core' as *;
+
+// Top bar styles
+.top-bar {
+	width: 100%;
+	background-color: $primary-color;
+	.container {
+		display: flex;
+		flex-direction: column;
+		// justify-content: space-between;
+		align-items: center;
+		// margin: 0 auto;
+		padding-top: $size-4;
+		padding-bottom: $size-4;
+		span {
+			// font-size: 3rem;
+			// margin-right: $size-2;
+			// color: $light-color;
+			display: none;
+		}
+		.btn {
+			// margin-top: $size-2;
+			background-color: $secondary-color;
+			color: $light-color;
+		}
+	}
+	&_contact-item {
+		// text-align: center;
+		margin-bottom: $size-3;
+		background-color: $secondary-color;
+		padding: $size-2 $size-3;
+		border-radius: $default-rounding;
+		// margin-right: $size-2;
+		// padding-top: $size-3;
+		// padding-bottom: $size-7;
+		// padding-left: $size-6;
+		// background-size:10%;
+		// background-position-y: center;
+		// background-repeat: no-repeat;
+		// font-size: 2rem;
+		// &--call {
+		// 	background-image: url('../../img/icon/phone.svg');
+		// 	background-image: none;
+		// }
+		// &--mail {
+		// 	background-image: url('../../img/icon/at.svg');
+		// 	background-image: none;
+		// 	display: none;
+		// }
+	}
+}
 
 // Navigation style
 
@@ -7,9 +57,9 @@
 
 // Button styles
 .btn {
-    padding: $size-2;
-    background-color: $light-color;
-    border-radius: $default-rounding;
+	padding: $size-2;
+	background-color: $light-color;
+	border-radius: $default-rounding;
 }
 
 // Form styles
@@ -39,24 +89,24 @@
 }
 
 .contact__form {
-    .btn {
-        cursor: pointer;
-        padding: $size-3;
-    }
+	.btn {
+		cursor: pointer;
+		padding: $size-3;
+	}
 }
 
 .contact__form * {
-    display: block;
-    width: 100%;
-    margin-bottom: $size-4;
-    padding: $size-3;
-    border: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    // border: 1px solid $dark-gray;
+	display: block;
+	width: 100%;
+	margin-bottom: $size-4;
+	padding: $size-3;
+	border: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	// border: 1px solid $dark-gray;
 }
 
 .contact__form textarea {
-    // color: $dark-color;
-    height: 10rem;
+	// color: $dark-color;
+	height: 10rem;
 }
