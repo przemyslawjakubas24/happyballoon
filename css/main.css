@@ -83,7 +83,7 @@ button {
   padding-bottom: 30px;
 }
 .top-bar .container span {
-  display: none;
+  display: block;
 }
 .top-bar .container .btn {
   background-color: #b20472;
