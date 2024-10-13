@@ -16,7 +16,7 @@ burgerBtn.addEventListener('click', () => {
 })
 
 function handleScroll() {
-	if (window.scrollY >= 200) {
+	if (window.scrollY >= 250) {
 		sizeNav.style.padding = '1em 2em'
 		sizeNavLogo.style.width = '40px'
 	} else {
