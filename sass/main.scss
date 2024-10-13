@@ -1,2 +1,156 @@
 // Main styles
-@use './partials/' as *;
+// @use './partials/' as *;
+
+// Zmienne
+$theme-color: #0ca9ee;
+$primary-color: #333;
+$secondary-color: #f4f4f4;
+$font-stack: Helvetica, sans-serif;
+
+// Size main
+$size-1: 0.5rem;
+$size-2: 1rem;
+$size-3: 2rem;
+$size-4: 3rem;
+$size-5: 4rem;
+$size-6: 6rem;
+$size-7: 8rem;
+
+// Margin page
+$margin-page-small: $size-3;
+$margin-page-medium: $size-5;
+$margin-page-large: $size-7;
+
+// Resetowanie stylów
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+// Stylowanie ciała strony
+body {
+	font-family: $font-stack;
+	color: $primary-color;
+	background-color: $secondary-color;
+	line-height: 1.6;
+	font-size: 1.6rem;
+}
+
+// Nagłówek
+header {
+	background: $primary-color;
+	color: white;
+	padding: $margin-page-small;
+
+	h1 {
+		text-align: center;
+	}
+
+	img {
+		width: 160px;
+		display: block;
+		margin: 0 auto;
+		padding: $size-4 0;
+	}
+
+	nav {
+		ul {
+			display: flex;
+			justify-content: center;
+			list-style: none;
+
+			li {
+				margin: 0 2rem;
+
+				a {
+					color: white;
+					text-decoration: none;
+
+					&:hover {
+						color: $theme-color;
+						transition: color 0.2s ease, transform 0.2s ease;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Główna zawartość
+main {
+	padding: 2rem;
+
+	section {
+		margin-bottom: 2rem;
+
+		h2 {
+			margin-bottom: 1rem;
+		}
+
+		p {
+			margin-bottom: 1rem;
+		}
+
+		ul {
+			list-style: disc;
+			padding-left: 1.5rem;
+
+			li {
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
+}
+
+// Stopka
+footer {
+	background: $primary-color;
+	color: white;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+// Zapytania medialne
+@media (max-width: 768px) {
+	header {
+		nav ul {
+			flex-direction: column;
+			align-items: center;
+
+			li {
+				margin: 1rem 0;
+			}
+		}
+
+		main {
+			padding: 1rem;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	header {
+		h1 {
+			font-size: 2.4rem;
+		}
+	}
+
+	nav ul {
+		li {
+			margin: 2rem 0;
+		}
+	}
+
+	main {
+		padding: 0.5rem;
+	}
+}
