@@ -68,10 +68,9 @@ button {
   font-size: 1.6rem;
 }
 
-.heading-main {
+.header__heading-main {
   font-size: 2.4rem;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .heading-second {
@@ -81,8 +80,6 @@ button {
 .logo {
   width: 160px;
   display: block;
-  margin: 0 auto;
-  padding: 3rem 0;
 }
 
 .nav__list {
@@ -92,7 +89,7 @@ button {
   align-items: center;
 }
 .nav__item {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .nav__link {
   color: #333;
@@ -104,45 +101,50 @@ button {
     flex-direction: row;
   }
   .nav__item {
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
   .nav__link:hover {
     color: #0ca9ee;
     transition: color 0.2s ease, transform 0.2s ease;
   }
 }
-.container {
-  margin: 0 auto;
-  padding: 0 2rem;
+.content {
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .header {
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-color: #f3f3f3;
 }
-
-.main-content {
-  padding: 2rem;
+.header__heading-main {
+  margin-bottom: 3rem;
 }
-
-.section {
-  margin-bottom: 2rem;
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
 }
-.section p {
-  margin-bottom: 1rem;
+.header__container .logo {
+  padding: 0;
+  margin: 3rem 8rem;
 }
-.section ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-.section ul li {
-  margin-bottom: 0.5rem;
+.header__container .paragraph-default {
+  display: block;
 }
 
 .footer {
   background-color: #0ca9ee;
   text-align: center;
   padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .header__container {
+    flex-direction: row;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */

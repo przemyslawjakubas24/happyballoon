@@ -2,10 +2,9 @@
 @use './core' as *;
 
 //Heading styles
-.heading-main {
+.header__heading-main {
 	font-size: 2.4rem;
 	text-align: center;
-	margin-bottom: $size-3;
 }
 
 .heading-second {
@@ -16,8 +15,6 @@
 .logo {
 	width: 160px;
 	display: block;
-	margin: 0 auto;
-	padding: $size-4 0;
 }
 
 //Nav styles
@@ -30,7 +27,7 @@
 	}
 
 	&__item {
-		margin: 2rem 0;
+		margin: 1rem 0;
 	}
 
 	&__link {
@@ -51,7 +48,7 @@
 		}
 
 		&__item {
-			margin: 0 1rem;
+			margin: 0 2rem;
 		}
 
 		&__link {
@@ -63,6 +60,4 @@
 	}
 }
 
-//-----------------------------------------------------------------------------//
-///////////////////////////////// media quiries /////////////////////////////////
-//-----------------------------------------------------------------------------//
+
