@@ -1,4 +1,6 @@
-// Layout styles //
+//-----------------------------------------------------------------------------//
+///////////////////////////////// Layout styles /////////////////////////////////
+//-----------------------------------------------------------------------------//
 @use './core' as *;
 
 // General styles
@@ -8,4 +10,40 @@
 	width: 100%;
 	max-width: 1200px;
 }
+
+.header {
+	padding: $margin-page-small;
+	background-color: $light-color;
+}
+
+.main-content {
+	padding: 2rem;
+}
+
+.section {
+	margin-bottom: 2rem;
+	p {
+		margin-bottom: 1rem;
+	}
+	ul {
+		list-style: disc;
+		padding-left: 1.5rem;
+		
+		li {
+			margin-bottom: .5rem;
+		}
+	}
+}
+
+.footer {
+	background-color: $theme-color;
+	text-align: center;
+	padding: $size-2 0;
+}
+
+//-----------------------------------------------------------------------------//
+///////////////////////////////// media quiries /////////////////////////////////
+//-----------------------------------------------------------------------------//
+
+
 

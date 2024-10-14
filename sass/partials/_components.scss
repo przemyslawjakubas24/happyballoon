@@ -1,19 +1,68 @@
 ////------------------------------- Components styles-------------------------------//////
 @use './core' as *;
 
-//Header styles
-.header {
-    padding: $margin-page-small;
-    background-color: $light-color;
-    h1 {
-        text-align: center;
-        margin-bottom: $size-3;
-    }
+//Heading styles
+.heading-main {
+	font-size: 2.4rem;
+	text-align: center;
+	margin-bottom: $size-3;
+}
+
+.heading-second {
+	margin-bottom: 1rem;
 }
 
 //Logo styles
 .logo {
-    width: 160px;
-    display: block;
-    margin: 0 auto;
+	width: 160px;
+	display: block;
+	margin: 0 auto;
+	padding: $size-4 0;
 }
+
+//Nav styles
+.nav {
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__item {
+		margin: 2rem 0;
+	}
+
+	&__link {
+		color: $dark-color;
+		text-decoration: none;
+	}
+}
+
+//-----------------------------------------------------------------------------//
+///////////////////////////////// media quiries /////////////////////////////////
+//-----------------------------------------------------------------------------//
+
+@media (min-width: 768px) {
+	//Nav styles
+	.nav {
+		&__list {
+			flex-direction: row;
+		}
+
+		&__item {
+			margin: 0 1rem;
+		}
+
+		&__link {
+			&:hover {
+				color: $theme-color;
+				transition: color .2s ease, transform .2s ease;
+			}
+		}
+	}
+}
+
+//-----------------------------------------------------------------------------//
+///////////////////////////////// media quiries /////////////////////////////////
+//-----------------------------------------------------------------------------//
