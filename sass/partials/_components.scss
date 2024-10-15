@@ -13,8 +13,10 @@
 
 //Logo styles
 .logo {
-	width: 160px;
 	display: block;
+	width: 160px;
+    border: 8px solid $theme-color;
+    border-radius: 80px;
 }
 
 //Nav styles

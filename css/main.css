@@ -78,8 +78,10 @@ button {
 }
 
 .logo {
-  width: 160px;
   display: block;
+  width: 160px;
+  border: 8px solid #0ca9ee;
+  border-radius: 80px;
 }
 
 .nav__list {
@@ -126,14 +128,33 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .header__container .logo {
   padding: 0;
   margin: 3rem 8rem;
 }
-.header__container .paragraph-default {
+
+.section {
+  padding: 6rem 0;
+}
+.section--about {
+  background-color: #58d5ff;
+}
+.section--about .heading-second {
+  text-align: center;
+}
+.section--about .section--about__container {
+  display: flex;
+  flex-direction: column;
+}
+.section--about .section--about__container .paragraph-default {
   display: block;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.section--about__image {
+  width: 100%;
 }
 
 .footer {
@@ -146,5 +167,14 @@ button {
   .header__container {
     flex-direction: row;
     justify-content: center;
+  }
+  .section--about .heading-second {
+    text-align: left;
+  }
+  .section--about .section--about__container {
+    flex-direction: row;
+  }
+  .section--about .section--about__container .paragraph-default {
+    text-align: left;
   }
 }/*# sourceMappingURL=main.css.map */
