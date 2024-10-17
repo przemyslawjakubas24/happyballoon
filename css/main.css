@@ -73,14 +73,10 @@ button {
   text-align: center;
 }
 
-.heading-second {
-  margin-bottom: 1rem;
-}
-
 .logo {
   display: block;
   width: 160px;
-  border: 8px solid #0ca9ee;
+  border: 8px solid #0cb9ee;
   border-radius: 80px;
 }
 
@@ -106,11 +102,11 @@ button {
     margin: 0 2rem;
   }
   .nav__link:hover {
-    color: #0ca9ee;
+    color: #0cb9ee;
     transition: color 0.2s ease, transform 0.2s ease;
   }
 }
-.content {
+.container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -119,7 +115,8 @@ button {
 
 .header {
   padding: 4rem 2rem;
-  background-color: #f3f3f3;
+  background: #f3f3f3 url("../../img/page/top_bg_1920.jpg") no-repeat center;
+  background-size: cover;
 }
 .header__heading-main {
   margin-bottom: 3rem;
@@ -134,31 +131,101 @@ button {
   padding: 0;
   margin: 3rem 8rem;
 }
+.header__container p {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgba(243, 243, 243, 0.8);
+}
+.header__container p a {
+  color: #333;
+}
 
 .section {
   padding: 6rem 0;
 }
-.section--about {
-  background-color: #58d5ff;
-}
-.section--about .heading-second {
+.section .heading-second {
   text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 2.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-.section--about .section--about__container {
+.section .heading-second::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f3f3f3;
+}
+.section--about {
+  background: linear-gradient(45deg, #0cb9ee, #0AE5F0);
+}
+.section--about .container .section--about__container {
   display: flex;
   flex-direction: column;
 }
-.section--about .section--about__container .paragraph-default {
+.section--about .container .section--about__container .section--about__text-box .text {
   display: block;
   margin-bottom: 2rem;
   text-align: center;
 }
-.section--about__image {
+.section--about .container .section--about__container .section--about__text-box :last-child {
+  margin-bottom: 0;
+}
+.section--offer .container .heading-second {
+  padding-bottom: 1.8rem;
+  margin-bottom: 2.6rem;
+}
+.section--offer .container .heading-second::after {
+  background-color: #0cb9ee;
+}
+.section--offer .container .wrapper .offer__item {
   width: 100%;
+  padding: 100px 20px;
+  background-color: #8c8c8c;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.section--offer .container .wrapper .offer__item--1 {
+  background-image: url("./../../img/page/offer/scianka.jpg");
+}
+.section--offer .container .wrapper .offer__item--2 {
+  background-image: url("./../../img/page/offer/brama.jpg");
+}
+.section--offer .container .wrapper .offer__item--3 {
+  background-image: url("./../../img/page/offer/girlanda.jpeg");
+}
+.section--offer .container .wrapper .offer__item--4 {
+  background-image: url("./../../img/page/offer/slupki.jpeg");
+}
+.section--offer .container .wrapper .offer__item--5 {
+  background-image: url("./../../img/page/offer/sala.jpeg");
+}
+.section--offer .container .wrapper .offer__item--6 {
+  background-image: url("./../../img/page/offer/baby.jpg");
+}
+.section--offer .container .wrapper .offer__item .heading-third {
+  display: block;
+  max-width: 140px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  line-height: 1.25;
+  border-radius: 5px;
 }
 
 .footer {
-  background-color: #0ca9ee;
+  background-color: #0cb9ee;
   text-align: center;
   padding: 1rem 0;
 }
@@ -168,13 +235,13 @@ button {
     flex-direction: row;
     justify-content: center;
   }
-  .section--about .heading-second {
+  .section--about .container .heading-second {
     text-align: left;
   }
-  .section--about .section--about__container {
+  .section--about .container .section--about__container {
     flex-direction: row;
   }
-  .section--about .section--about__container .paragraph-default {
+  .section--about .container .section--about__container .section--about__text-box .text {
     text-align: left;
   }
 }/*# sourceMappingURL=main.css.map */

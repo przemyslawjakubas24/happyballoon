@@ -2,8 +2,8 @@
 //________________________________________________________________________________//
 
 // Colors
-$theme-color: #0ca9ee;
-$secondary-color: #58d5ff;
+$theme-color: #0cb9ee;
+$secondary-color: #0AE5F0;
 $light-color: #f3f3f3;
 $dark-color: #333;
 $grey-color: #808080;
@@ -26,6 +26,13 @@ $margin-page-large: $size-7;
 // Other
 $font-stack: Helvetica, sans-serif;
 $default-rounding: 5px;
+
+//----------------------- Mixins-------------------------//
+
+// Function gradient
+@mixin gradient($direction, $start-color, $end-color) {
+	background: linear-gradient($direction, $start-color, $end-color);
+  }
 
 // Base styles
 *,

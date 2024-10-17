@@ -4,7 +4,7 @@
 @use './core' as *;
 
 // General styles
-.content {
+.container {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -14,7 +14,8 @@
 // Content styles
 .header {
 	padding: 4rem 2rem;
-	background-color: $light-color;
+	background: $light-color url('../../img/page/top_bg_1920.jpg') no-repeat center;
+	background-size: cover;
 	&__heading-main {
 		margin-bottom: 3rem;
 	}
@@ -27,27 +28,107 @@
 			padding: 0;
 			margin: 3rem 8rem;
 		}
+		p {
+			padding: 1rem;
+			border-radius: $default-rounding;
+			background-color: rgb(243, 243, 243, 0.8);
+			a {
+				color: $dark-color;
+			}
+		}
 	}
 }
 
 .section {
 	padding: 6rem 0;
+	.heading-second {
+		text-align: center;
+		margin-bottom: 2rem;
+		position: relative;
+		padding-bottom: 2.2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.heading-second::after {
+		content: '';
+		display: block;
+		width: 80px;
+		height: 2px;
+		position: absolute;
+		margin: 0 auto;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: $light-color;
+	}
 	&--about {
-		background-color: $secondary-color;
-		.heading-second {
-			text-align: center;
-		}
-		.section--about__container {
-			display: flex;
-			flex-direction: column;
-			.paragraph-default {
-				display: block;
-				margin-bottom: 2rem;
-				text-align: center;
+		@include gradient(45deg, $theme-color, $secondary-color);
+		.container {
+			.section--about__container {
+				display: flex;
+				flex-direction: column;
+				.section--about__text-box {
+					.text {
+						display: block;
+						margin-bottom: 2rem;
+						text-align: center;
+					}
+					:last-child {
+						margin-bottom: 0;
+					}
+				}
 			}
 		}
-		&__image {
-			width: 100%;
+	}
+	&--offer {
+		.container {
+			.heading-second {
+				padding-bottom: 1.8rem;
+				margin-bottom: 2.6rem;
+			}
+			.heading-second::after {
+				background-color: $theme-color;
+			}
+			.wrapper {
+				.offer__item {
+					width: 100%;
+					padding: 100px 20px;
+					background-color: #8c8c8c;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center;
+					margin-bottom: 4rem;
+					text-align: center;
+					&--1 {
+						background-image: url('./../../img/page/offer/scianka.jpg');
+					}
+					&--2 {
+						background-image: url('./../../img/page/offer/brama.jpg');
+					}
+					&--3 {
+						background-image: url('./../../img/page/offer/girlanda.jpeg');
+					}
+					&--4 {
+						background-image: url('./../../img/page/offer/slupki.jpeg');
+					}
+					&--5 {
+						background-image: url('./../../img/page/offer/sala.jpeg');
+					}
+					&--6 {
+						background-image: url('./../../img/page/offer/baby.jpg');
+					}
+					.heading-third {
+						display: block;
+						max-width: 140px;
+						margin: 0 auto;
+						padding: 10px;
+						background-color: rgba(255, 255, 255, 0.75);
+						text-align: center;
+						line-height: 1.25;
+						border-radius: $default-rounding;
+					}
+				}
+			}
 		}
 	}
 }
@@ -69,15 +150,18 @@
 		}
 	}
 	.section {
-		// padding: 6rem 0;
 		&--about {
-			.heading-second {
-				text-align: left;
-			}
-			.section--about__container {
-				flex-direction: row;
-				.paragraph-default {
+			.container {
+				.heading-second {
 					text-align: left;
+				}
+				.section--about__container {
+					flex-direction: row;
+					.section--about__text-box {
+						.text {
+							text-align: left;
+						}
+					}
 				}
 			}
 		}
