@@ -62,8 +62,17 @@
 		background-color: $light-color;
 	}
 	&--about {
+		position: relative;
 		@include gradient(45deg, $theme-color, $secondary-color);
 		.container {
+			.section--about__bg2 {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				z-index: 1000;
+				background-image: url('./../../img/page/balloons_bg_640.png');
+			}
 			.section--about__container {
 				display: flex;
 				flex-direction: column;
@@ -151,6 +160,7 @@
 	}
 	.section {
 		&--about {
+			// background-image: url('./../../img/page/balloons_bg_640.png');
 			.container {
 				.heading-second {
 					text-align: left;
