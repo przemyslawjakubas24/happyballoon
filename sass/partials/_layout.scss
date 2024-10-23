@@ -14,7 +14,7 @@
 // Content styles
 .header {
 	padding: 4rem 2rem;
-	background: $light-color url('../../img/page/top_bg_1920.jpg') no-repeat center;
+	background: $light-color url('../img/page/top_bg_1920.jpg') no-repeat center;
 	background-size: cover;
 	&__heading-main {
 		margin-bottom: 3rem;
@@ -100,22 +100,22 @@
 					margin-bottom: 4rem;
 					text-align: center;
 					&--1 {
-						background-image: url('./../../img/page/offer/scianka.jpg');
+						background-image: url('../img/page/offer/scianka.jpg');
 					}
 					&--2 {
-						background-image: url('./../../img/page/offer/brama.jpg');
+						background-image: url('../img/page/offer/brama.jpg');
 					}
 					&--3 {
-						background-image: url('./../../img/page/offer/girlanda.jpeg');
+						background-image: url('../img/page/offer/girlanda.jpeg');
 					}
 					&--4 {
-						background-image: url('./../../img/page/offer/slupki.jpeg');
+						background-image: url('../img/page/offer/slupki.jpeg');
 					}
 					&--5 {
-						background-image: url('./../../img/page/offer/sala.jpeg');
+						background-image: url('../img/page/offer/sala.jpeg');
 					}
 					&--6 {
-						background-image: url('./../../img/page/offer/baby.jpg');
+						background-image: url('../img/page/offer/baby.jpg');
 					}
 					.heading-third {
 						display: block;

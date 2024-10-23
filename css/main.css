@@ -115,7 +115,7 @@ button {
 
 .header {
   padding: 4rem 2rem;
-  background: #f3f3f3 url("../../img/page/top_bg_1920.jpg") no-repeat center;
+  background: #f3f3f3 url("../img/page/top_bg_1920.jpg") no-repeat center;
   background-size: cover;
 }
 .header__heading-main {
@@ -196,22 +196,22 @@ button {
   text-align: center;
 }
 .section--offer .container .wrapper .offer__item--1 {
-  background-image: url("./../../img/page/offer/scianka.jpg");
+  background-image: url("../img/page/offer/scianka.jpg");
 }
 .section--offer .container .wrapper .offer__item--2 {
-  background-image: url("./../../img/page/offer/brama.jpg");
+  background-image: url("../img/page/offer/brama.jpg");
 }
 .section--offer .container .wrapper .offer__item--3 {
-  background-image: url("./../../img/page/offer/girlanda.jpeg");
+  background-image: url("../img/page/offer/girlanda.jpeg");
 }
 .section--offer .container .wrapper .offer__item--4 {
-  background-image: url("./../../img/page/offer/slupki.jpeg");
+  background-image: url("../img/page/offer/slupki.jpeg");
 }
 .section--offer .container .wrapper .offer__item--5 {
-  background-image: url("./../../img/page/offer/sala.jpeg");
+  background-image: url("../img/page/offer/sala.jpeg");
 }
 .section--offer .container .wrapper .offer__item--6 {
-  background-image: url("./../../img/page/offer/baby.jpg");
+  background-image: url("../img/page/offer/baby.jpg");
 }
 .section--offer .container .wrapper .offer__item .heading-third {
   display: block;
